@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindfulness Reminder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 18px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+             font-size: 12px;
+        }
+
+        input[type="number"] {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 7px;
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #3367d6;
+        }
+
+        button:active {
+            background-color: #2a56c6;
+        }
+
+        #StopTimerBtn {
+            padding: 7px;
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            margin-top: 10px;
+            margin-left: 70px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+
+        #StopTimerBtn:hover {
+            background-color: #cc0000;
+        }
+
+        #StopTimerBtn:active {
+            background-color: #990000;
+        }
+        #MeditationTimer {
+  padding: 7px 50px; 
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#MeditationTimer:hover {
+            background-color: greenyellow;
+            color: #333;
+         
+        }
+
+        #MeditationTimer:active {
+            background-color: greenyellow;
+            color: #333;
+        }
+
+
+         
+    </style>
+    <script defer src="popup.js"></script>
+</head>
+
+<body>
+    
+    <h1>Mindfulness Reminder</h1>
+    <label for="frequencyInput">How often do you want to be reminded?</label>
+    <br>
+    <input type="number" id="frequencyInput" min="1" placeholder="Enter minutes">
+    <br>
+    <button id="setTimerBtn">Set Timer</button>
+    
+    
+    <button id="StopTimerBtn">Cancel</button>
+    <button id="MeditationTimer">MEDITATE</button>
+
+    <p id="reminderText"></p>
+    <a href="#" id="settingsLink">Settings</a>
+
+
+
+   
+
+  
+</body>
+
+
+
+</html>
